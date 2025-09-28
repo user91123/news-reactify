@@ -17,8 +17,6 @@ const Main = () => {
         setNews(response.news);
       } catch (error) {
         console.log(error);
-      } finally {
-        setIsLoading(false);
       }
     };
     fetchNews();
